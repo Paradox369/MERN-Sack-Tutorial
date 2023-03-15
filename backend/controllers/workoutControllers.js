@@ -31,12 +31,10 @@ const createWorkout = async (req, res) => {
   if (!load) emptyFields.push("load");
 
   if (emptyFields.length > 0) {
-    return res
-      .status(400)
-      .json({
-        error: "please fill in the fields highlighted inred",
-        emptyFields,
-      });
+    return res.status(400).json({
+      error: "please fill in the fields highlighted in red",
+      emptyFields,
+    });
   }
 
   try {
