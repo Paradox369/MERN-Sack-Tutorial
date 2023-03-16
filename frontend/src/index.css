@@ -25,7 +25,6 @@ header .container {
 header a {
   color: #333;
   text-decoration: none;
-  text-transform: capitalize;
 }
 .pages {
   max-width: 1400px;
@@ -101,4 +100,23 @@ div.error {
 }
 input.error {
   border: 1px solid var(--error);
+}
+
+/* navbar */
+nav {
+  display: flex;
+  align-items: center;
+}
+nav a {
+  margin-left: 10px;
+  text-transform: capitalize;
+}
+/* auth forms */
+form.signup,
+form.login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
 }
